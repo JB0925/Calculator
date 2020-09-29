@@ -14,8 +14,8 @@ answer and starting over again. In addition, several blank
 print lines were added to enhance readability and ensure that
 lines are not placed too closely together."""
 
-while ans != 'exit'.lower().strip():
-    ans = input('Please enter the equation you want to evaluate, one character at a time. If you want to stop, type "exit": ')
+while ans != 'exit':
+    ans = input('Please enter the equation you want to evaluate, one character at a time. If you want to stop, type "exit": ').lower().strip()
 
     try:       # try the below, and if it fails, move to the except blocks to catch errors.
         if ans == '=':
